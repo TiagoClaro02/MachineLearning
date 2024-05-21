@@ -1,0 +1,15 @@
+digraph {
+	x1 [label=x1]
+	x2 [label=x2]
+	w1 [label=w1]
+	w2 [label=w2]
+	b [label=b]
+	sum [label=sum]
+	sigmoid [label=sigmoid]
+	x1 -> sum [label="x1*w1"]
+	x2 -> sum [label="x2*w2"]
+	w1 -> sum
+	w2 -> sum
+	sum -> sigmoid [label="sum+b"]
+	b -> sigmoid
+}
